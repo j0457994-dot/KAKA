@@ -1,0 +1,14 @@
+
+<!doctype html>
+<html>
+<head><link rel="stylesheet" href="/static/style.css"></head>
+<body>
+<div class="container"><div class="card">
+<form method="post" action="/admin/login">
+<input name="password" type="password" placeholder="Admin password">
+<button>Login</button>
+</form>
+{% if error %}<p>{{ error }}</p>{% endif %}
+</div></div>
+</body>
+</html>

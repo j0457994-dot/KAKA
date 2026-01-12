@@ -1,0 +1,15 @@
+
+<!doctype html>
+<html>
+<head><link rel="stylesheet" href="/static/style.css"></head>
+<body>
+<div class="container">
+<h2>Admin Dashboard</h2>
+<div class="card">
+{% for t in txs %}
+<p>{{ t.amount_ghs }} → {{ t.amount_ngn }}</p>
+{% endfor %}
+</div>
+</div>
+</body>
+</html>
